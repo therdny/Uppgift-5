@@ -1,0 +1,22 @@
+/*
+	Author: Jens Hjalmarsson
+	Email: jens.hjalmarsson@gmail.com
+
+	Date: October 10, 2016
+*/
+/*=contact-information
+--------------------------------------------*/
+section#contact-information div.general-information{
+	float: left;
+	margin: 15px 0;
+	width: 30%;
+	background: transparent;
+}
+
+section#contact-information div.persons{
+	float: left;
+	margin: 15px 0;
+	padding: 0 25px 25px 25px;
+	width: 70%;
+	background: #fff;
+}

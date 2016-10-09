@@ -71,7 +71,7 @@ nav ul li a::before{
 	background: #f1f1f1;
 }
 
-nav ul li:hover a::before, nav ul li:first-child a::before{
+nav ul > li:hover > a::before, nav > ul > li a::before{
 	display: none;
 }
 
@@ -84,7 +84,6 @@ nav ul ul{
 	display: none;
 	position: absolute;
 	top: 69px;
-	left: 0;
 	width: auto;
 	height: auto;
 	z-index: 100000;
@@ -106,13 +105,13 @@ nav ul ul li a{
 
 /* third */
 nav ul ul ul{
-	display: none;
 	float: none;
+	display: none;
 	position: absolute;
 	top: 0;
-	right: 555px;
+	left: 100%;
 	background: #fff;
-	width: 730px;
+	width: calc(100% + 580px);
 	height: auto;
 	z-index: 100000;
 }
