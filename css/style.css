@@ -1,0 +1,216 @@
+/*
+	Author: Jens Hjalmarsson
+	Email: jens.hjalmarsson@gmail.com
+
+	Date: October 8, 2016
+*/
+/*=import
+--------------------------------------------*/
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css';
+@import 'reset.css';
+@import 'typography.css';
+@import 'nav.css';
+
+/*=fonts
+--------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400';
+
+/*=misc
+--------------------------------------------*/
+.hide{
+	display: none;
+}
+
+html, body{
+	height: 100%;
+}
+
+/*=base
+--------------------------------------------*/
+body{
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+	font-size: 15px;
+}
+
+.content-width{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1333px;
+}
+
+/*=typnav
+--------------------------------------------*/
+ul#topnav{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+ul#topnav li{
+	float: left;
+}
+
+/*=header
+--------------------------------------------*/
+header#masthead{
+	position: relative;
+	padding: 100px 0 0;
+	background: #f1f1f1 linear-gradient(0deg, #f1f1f1, #fff);
+}
+
+header#masthead::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	width: 100%;
+	height: 6px;
+}
+
+header#masthead .content-width{
+	position: relative;
+	padding: 17px 0 0;
+	z-index: 1000000;
+}
+
+header#masthead .content-width h1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: url(../images/branding.png) no-repeat 0 top;
+	width: 175px;
+	height: 90px;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+ul#breadcrumbs{
+	padding: 0 0 0 10px;
+	background: #f7f7f7;
+	height: 42px;
+	border-bottom: 1px solid #e3e3e3;
+	overflow: hidden;
+	line-height: 42px;
+	font-size: 13px;
+	color: #5e5e5e;
+}
+
+ul#breadcrumbs span.fa-chevron-right{
+	font-size: 11px;
+}
+
+ul#breadcrumbs li{
+	float: left;
+}
+
+ul#breadcrumbs a{
+	margin: 0 10px;
+	color: #5e5e5e;
+}
+
+/*=main
+--------------------------------------------*/
+div.backdrop{
+	margin: 20px 0;
+	background-size: cover;
+	height: 320px;
+}
+
+#img-city{
+	background-image: url(../images/city_background.png);
+	background-repeat: no-repeat;
+}
+
+/*=footer
+--------------------------------------------*/
+footer{
+	position: relative;
+	background: #fff;
+	height: 350px;
+}
+
+footer .content-width{
+	padding: 50px 0;
+}
+
+footer::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	width: 100%;
+	height: 6px;
+}
+
+footer .content-width::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #37e9ca;
+	width: 100%;
+	height: 6px;
+}
+
+footer ul{
+	position: absolute;
+}
+
+footer ul li{
+	position: relative;
+	padding: 0;
+	line-height: 30px;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+footer ul li span{
+	margin: 0 5px 0 0;
+	visibility: hidden;
+	font-size: 12px !important;
+}
+
+footer ul li.active span{
+	visibility: visible;
+	color: #000 !important;
+}
+
+footer ul li:hover span{
+	color: #a4a4a4;
+	visibility: visible;
+}
+/*
+search button{
+	padding: 20px;
+	background: #37e9ca;
+	font-size: 34px !important;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+*/
+
+footer #backtop{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px;
+	background: #37e9ca;
+	font-size: 34px !important;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+footer p{
+	text-align: center;
+	margin-top: 55px;
+	padding: 85px 0 0 0;
+	background: url(../images/branding.png) no-repeat top center;
+}

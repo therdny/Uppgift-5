@@ -1,0 +1,32 @@
+/*
+	Author: Jens Hjalmarsson
+	Email: jens.hjalmarsson@gmail.com
+
+	Date: October 8, 2016
+*/
+/*=typography
+--------------------------------------------*/
+h2, h3{
+	margin: 20px 0;
+	font-family: 'Cormorant Garamond', serif;
+}
+h4, h5, h6, p, body{
+	margin: 15px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+h2{
+	font-size: 55px;
+}
+h3{
+	font-size: 40px;
+}
+h4{
+	font-size: 25px;
+}
+h5{
+	font-size: 20px;
+}
+p{
+	font-size: 14px;
+	line-height: 30px;
+}
